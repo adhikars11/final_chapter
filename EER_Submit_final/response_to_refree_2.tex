@@ -1,0 +1,130 @@
+\documentclass[12pt]{article}
+\usepackage[dvips]{graphicx}
+\usepackage{setspace,palatino,multirow}
+\usepackage{amsmath,amssymb}
+\usepackage{amsthm}
+\usepackage{subfig,comment}
+\usepackage{pdflscape}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{hyperref}
+\usepackage[longnamesfirst]{natbib}
+\bibliographystyle{chicago}
+
+\special{papersize=8.5in,11in}
+
+\definecolor{darkred}{rgb}{0.66,0,0}
+\definecolor{darkblue}{rgb}{0,0,0.25}
+
+\hypersetup{
+  colorlinks=true,
+  citecolor=darkblue,
+  linkcolor=darkblue,
+  pdfpagemode=none,
+  pdfstartview={FitH},
+  pdftitle={},
+  pdfauthor={},
+  pdfkeywords={}
+}
+
+\setlength{\parindent}{0.25in}
+\setlength{\parskip}{1.5ex plus0.5ex minus0.5ex}
+\textwidth15.75cm
+\evensidemargin5mm
+\oddsidemargin5mm
+\topmargin-15mm
+\textheight 22.7cm
+\hyphenation{over-lapping}
+
+\renewcommand{\arraystretch}{1.1}
+\usepackage[margin=2cm]{geometry}
+
+\newcounter{saveeqni}%
+\newcounter{saveeqn01i}%
+\newcommand{\alpheqni}{\setcounter{saveeqni}{\value{section}}%
+\renewcommand{\theequation}
+    {\alph{saveeqni}\mbox{.\arabic{equation}}}}%
+\newcommand{\reseteqni}{\setcounter{equation}{\value{saveeqni}}%
+\renewcommand{\theequation}{\arabic{equation}}}%
+
+\begin{document}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+\theoremstyle{definition}
+\newtheorem{result}{Result}
+\theoremstyle{plain}
+\newtheorem{lemma}{Lemma}
+\theoremstyle{plain}
+\newtheorem{proposition}{Proposition}
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}
+\theoremstyle{plain}
+\newtheorem{corollary}{Corollary}
+
+\begin{onehalfspacing}
+
+\vspace{1.0cm}
+
+\noindent \textbf{Reply to Referee 2 of the manuscript ``Resolving Coordination Frictions in Green Labor Transitions: Minimizing Unemployment, Costs, and Welfare Distortions.''}
+
+\bigskip
+
+Dear Referee,
+
+\medskip
+
+Thank you very much for your thoughtful and constructive report. I appreciate your clear guidance on positioning, transition interpretation, and welfare robustness. I revised the manuscript to address each of your four comments.
+
+In what follows, I reproduce each comment in bold and provide my response directly below it.
+
+Before turning to specific comments, I summarize the main revisions:
+
+\textbf{First}, I revised language throughout the manuscript to describe the transition exercise as policy design along steady-state targets, avoiding overstatement relative to a full forward-looking transition model.
+
+\textbf{Second}, I repositioned the contribution to emphasize the policy-composition mapping along the transition (state-contingent worker--firm--worker rotation), rather than treating the directional ``dual beats one-sided'' result as the primary novelty.
+
+\textbf{Third}, I expanded welfare robustness and transition validation by adding [INSERT RISK-AVERSION TABLE/RESULTS] and [INSERT TRANSITION COMPARISON RESULTS], and by clarifying scope and interpretation.
+
+I now move to the specific comments.
+
+\bigskip
+\bigskip
+
+\textbf{Comment 1: Given that the transition is modeled as a sequence of policy-induced steady states, not as a true dynamic transition with forward-looking agents, the paper should rephrase claims about ``optimal dynamic policy'' more cautiously (e.g., ``optimal policy along steady-state targets'').}
+
+\medskip
+
+Thank you. I agree and revised terminology throughout the manuscript. I now use language such as ``optimal policy along steady-state targets'' and ``state-contingent policy composition along target nodes,'' and I removed wording that could be interpreted as claiming a full perfect-foresight dynamic optimum.
+
+\bigskip
+\bigskip
+
+\textbf{Comment 2: The directional result that dual subsidies outperform one-sided policies is not, by itself, surprising in a DMP environment. The paper's value lies more in mapping the optimal policy along the transition. Language should better focus on this primary contribution.}
+
+\medskip
+
+Thank you for this important point. I revised the abstract, introduction, and conclusion to make the transition-policy mapping the core contribution. I now present the one-shot directional dominance result as a useful benchmark, while emphasizing that the central value added is the quantitative mapping of policy composition and intensity across transition stages.
+
+\bigskip
+\bigskip
+
+\textbf{Comment 3: The paper assumes linear utility in welfare analysis. Please add a table varying risk aversion, or at least discuss how utility curvature affects CEV thresholds.}
+
+\medskip
+
+Thank you. I add a risk-aversion robustness exercise varying CRRA curvature (e.g., $\sigma \in \{[INSERT VALUES]\}$) and report how CEV-equivalent thresholds change across cases. I also include a focused discussion clarifying what is robust (policy ranking) and what is sensitive (exact threshold magnitudes).
+
+\bigskip
+\bigskip
+
+\textbf{Comment 4: Since steady state may not hold at each intermediate step, a full perfect-foresight transition analysis is preferred for comparison if policy dynamics are the main value added.}
+
+\medskip
+
+Thank you for this suggestion. I add a comparison exercise to evaluate how closely the sequence-of-steady-states policy mapping approximates a fuller transition benchmark under [INSERT ASSUMPTIONS/IMPLEMENTATION]. I report where the two approaches align and where gaps remain, and I clarify the scope and limitations of the current framework.
+
+\bigskip
+
+I am grateful for your careful report. Your comments helped sharpen the paper's contribution and improve the precision of its claims.
+
+\end{onehalfspacing}
+\end{document}

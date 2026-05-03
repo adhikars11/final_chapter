@@ -1,0 +1,193 @@
+\documentclass[12pt]{article}
+\usepackage[dvips]{graphicx}
+\usepackage{setspace,palatino,multirow}
+\usepackage{amsmath,amssymb}
+\usepackage{amsthm}
+\usepackage{subfig,comment}
+\usepackage{pdflscape}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{hyperref}
+\usepackage[longnamesfirst]{natbib}
+\bibliographystyle{chicago}
+
+\special{papersize=8.5in,11in}
+
+\definecolor{darkred}{rgb}{0.66,0,0}
+\definecolor{darkblue}{rgb}{0,0,0.25}
+
+\hypersetup{
+  colorlinks=true,
+  citecolor=darkblue,
+  linkcolor=darkblue,
+  pdfpagemode=none,
+  pdfstartview={FitH},
+  pdftitle={},
+  pdfauthor={},
+  pdfkeywords={}
+}
+
+\setlength{\parindent}{0.25in}
+\setlength{\parskip}{1.5ex plus0.5ex minus0.5ex}
+\textwidth15.75cm
+\evensidemargin5mm
+\oddsidemargin5mm
+\topmargin-15mm
+\textheight 22.7cm
+\hyphenation{over-lapping}
+
+\renewcommand{\arraystretch}{1.1}
+\usepackage[margin=2cm]{geometry}
+
+\newcounter{saveeqni}%
+\newcounter{saveeqn01i}%
+\newcommand{\alpheqni}{\setcounter{saveeqni}{\value{section}}%
+\renewcommand{\theequation}
+    {\alph{saveeqni}\mbox{.\arabic{equation}}}}%
+\newcommand{\reseteqni}{\setcounter{equation}{\value{saveeqni}}%
+\renewcommand{\theequation}{\arabic{equation}}}%
+
+\begin{document}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+\theoremstyle{definition}
+\newtheorem{result}{Result}
+\theoremstyle{plain}
+\newtheorem{lemma}{Lemma}
+\theoremstyle{plain}
+\newtheorem{proposition}{Proposition}
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}
+\theoremstyle{plain}
+\newtheorem{corollary}{Corollary}
+
+\begin{onehalfspacing}
+
+\vspace{1.0cm}
+
+\noindent \textbf{Reply to Referee 1 of the manuscript ``Resolving Coordination Frictions in Green Labor Transitions: Minimizing Unemployment, Costs, and Welfare Distortions.''}
+
+\bigskip
+
+Dear Referee,
+
+\medskip
+
+Thank you very much for your careful reading and highly constructive report. I am grateful for both your two essential comments and your detailed smaller suggestions. I revised the manuscript to address all points in a systematic way.
+
+In what follows, I reproduce each comment in bold and provide my response directly below it.
+
+Before turning to the comment-by-comment responses, I summarize the main revisions:
+
+\textbf{First}, I strengthened the transition section by clarifying what is and is not claimed under the sequence-of-steady-states approach, and by adding quantitative diagnostics to evaluate transition speed after policy shocks.
+
+\textbf{Second}, I expanded the calibration/identification discussion with a clearer parameter-to-moment mapping and additional intuition for why key moments are most informative for specific parameters.
+
+\textbf{Third}, I implemented all editorial and presentation changes requested (terminology, figure presentation, framing, and section-level clarity), and clarified several ambiguous statements in the calibration and policy discussion.
+
+I now move to the specific comments.
+
+\bigskip
+\bigskip
+
+\textbf{Comment 1 (Essential): Transition dynamics. I am satisfied with the way the paper models the green transition as a sequence of steady states. That said, this will seem more plausible if the paper can show that the economy transitions quickly to a new steady state after unexpected policy shifts (e.g., MIT shocks).}
+
+\medskip
+
+Thank you for this important suggestion. I agree this is central for interpretation. I now add a quantitative transition-speed exercise after unanticipated policy changes and report convergence metrics (including [INSERT METRICS]). These results support the practical use of a sequence-of-steady-states approximation in my setting.
+
+\bigskip
+\bigskip
+
+\textbf{Comment 2 (Essential): Identification. The paper maps parameters to targeted moments, but needs a clear and intuitive explanation of this mapping. It would help to show how key moments vary when key parameters change.}
+
+\medskip
+
+Thank you for this valuable point. I expanded the identification discussion and now provide an intuitive mapping from parameters to moments, including why some moments are more sensitive to specific parameters. I also add sensitivity evidence (tables/figures) showing how key targeted moments move with parameter variation.
+
+\bigskip
+\bigskip
+
+\textbf{Comment 3 (Smaller): Clarify that a hiring likelihood ratio of 1.29 means ``29\% higher than for other workers.''}
+
+\medskip
+
+Implemented. I now state this explicitly in the calibration paragraph and align wording with the value in the table.
+
+\bigskip
+\bigskip
+
+\textbf{Comment 4 (Smaller): The statements ``using 2022 generation is conservative given the near-term pipeline'' and ``the higher benchmark provides a fiscal stress test'' are unclear.}
+
+\medskip
+
+Thank you. I rewrote this passage to define both phrases precisely and to explain the logic in transparent, quantitative terms.
+
+\bigskip
+\bigskip
+
+\textbf{Comment 5 (Smaller): Why does calibration use a 2023 unemployment rate of 3.5\% while claiming calibration to the 2022 labor market?}
+
+\medskip
+
+Thank you for catching this inconsistency. I corrected and clarified the date convention in the calibration section and ensured internal consistency across text, targets, and tables.
+
+\bigskip
+\bigskip
+
+\textbf{Comment 6 (Smaller): Under Table 3, ``three policy paths'' should be ``three policy mixes'' (or equivalent), since these are not paths yet.}
+
+\medskip
+
+Implemented. I replaced this language and now consistently refer to these as policy mixes/configurations at a fixed target.
+
+\bigskip
+\bigskip
+
+\textbf{Comment 7 (Smaller): In Figure 7, why are bars not the same width?}
+
+\medskip
+
+Thank you. I revised the figure rendering to ensure consistent bar widths and improved visual readability.
+
+\bigskip
+\bigskip
+
+\textbf{Comment 8 (Smaller): The key takeaway from Figure 7 appears to be the strong rotation in policy mix versus relatively stable total intervention size; hump-shape seems second-order.}
+
+\medskip
+
+I agree and revised the text accordingly. The discussion now emphasizes composition rotation as the primary mechanism/result, with the hump profile presented as a secondary quantitative feature.
+
+\bigskip
+\bigskip
+
+\textbf{Comment 9 (Smaller): Writing in Section 4.3.1 is somewhat convoluted.}
+
+\medskip
+
+Thank you. I rewrote this subsection for clarity, shortening dense passages and improving signposting of the economic mechanism.
+
+\bigskip
+\bigskip
+
+\textbf{Comment 10 (Smaller): Policy intervention sizes are likely an upper bound because technical change may raise green productivity/wages and younger cohorts may face lower entry costs over time.}
+
+\medskip
+
+I agree and now add explicit upper-bound framing and interpretation in the discussion/conclusion, including why this does not overturn the core instrument-design ranking.
+
+\bigskip
+\bigskip
+
+\textbf{Comment 11 (Smaller): Figure D.8 in the appendix is very illustrative and may deserve to be in the main text.}
+
+\medskip
+
+Thank you for this suggestion. I moved [INSERT FIGURE ID] to the main text (or cross-referenced it more prominently, depending on space constraints) and updated the surrounding discussion.
+
+\bigskip
+
+I again thank you for the insightful and constructive feedback. It substantially improved both the clarity and the policy relevance of the revised manuscript.
+
+\end{onehalfspacing}
+\end{document}
